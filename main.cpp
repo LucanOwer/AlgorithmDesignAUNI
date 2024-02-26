@@ -6,15 +6,15 @@ using namespace std;
 
 int main() {
     
-    Human nahidwin("Nah I'd Win"); // Creates the goat
-    Computer daniel; // Creates daniel
-    Referee referee;
-    Player* winner = referee.refGame(&nahidwin, &daniel);
+    Human Gojo("Nah I'd Win"); // Creates the goat
+    Computer Daniel; // Creates daniel
+    Referee Referee;
+    Player* winner = Referee.refGame(&Gojo, &Daniel);
 
     if (winner == nullptr) {
         cout << "It's a Tie. AND THATS A FUCKING LOSS.\n";
     } else {
-        cout << winner->getName() << " wins. of course he's just built different.\n";
+        cout << winner->getName() << " . of course he's just built different.\n";
     }
 
     return 0;
