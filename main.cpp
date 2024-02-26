@@ -2,7 +2,7 @@
 #include "Computer.h"
 #include "Referee.h"
 #include <iostream>
-using namespace std;
+
 
 int main() {
     
@@ -12,9 +12,9 @@ int main() {
     Player* winner = Referee.refGame(&Gojo, &Daniel);
 
     if (winner == nullptr) {
-        cout << "It's a Tie. AND THATS A FUCKING LOSS.\n";
+        std::cout << "It's a Tie. AND THATS A FUCKING LOSS.\n";
     } else {
-        cout << winner->getName() << " . of course he's just built different.\n";
+        std::cout << winner->getName() << " . of course he's just built different.\n";
     }
 
     return 0;

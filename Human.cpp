@@ -5,8 +5,9 @@
 Human::Human(const std::string& playerName) : name(playerName) {}
 
 char Human::makeMove(){
+    std::cout << "Enter move: ";
     char move;
-    std::cout << "Enter move: "; std::cin >> move;
+    std::cin >> move;
     return move;
 }
 

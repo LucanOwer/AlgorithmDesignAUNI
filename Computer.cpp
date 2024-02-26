@@ -1,13 +1,10 @@
-using namespace std;
 #include "Computer.h"
 #include <iostream>
 
 char Computer::makeMove(){
-    char move;
-    move = 'R';
-    return move;
+    return 'R';
 }
 
-string Computer::getName() const {
-    return "that daniel guy";
+std::string Computer::getName() const {
+    return "Computer";
 }
