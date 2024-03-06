@@ -4,6 +4,7 @@
 #include <string>
 #include "Move.h"
 
+
 class Player {
 public:
     virtual std::string getName() const = 0;

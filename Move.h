@@ -5,7 +5,7 @@
 
 class Move {
 public:
-    virtual std::string getType() const = 0;
+    virtual std::string getName() const = 0;
     virtual bool moveLogic(const Move* opponent) const = 0;
 };
 
