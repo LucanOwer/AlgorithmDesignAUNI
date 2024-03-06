@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+#include "Human.h"
+#include "Computer.h"
+#include "Referee.h"
+#include <iostream>
+#include <string>
+
+
+int main() {
+    Human human("Him"); // Creates the goat
+    Computer computer; // Creates daniel
+    Referee referee;
+    Player* winner = referee.refGame(&human, &computer);
+
+    if (winner == nullptr) {
+        std::cout << "It's a Tie. AND THATS A FUCKING LOSS.\n";
+    } else {
+        std::cout << winner->getName() << " . nah he'd win.\n";
+    }
+
+    return 0;
+}
