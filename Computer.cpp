@@ -1,8 +1,8 @@
 #include "Computer.h"
-#include "Rock.h" // Include the header for Rock move
+#include "Ninja.h" 
 
 Move* Computer::makeMove() const {
-    return new Rock(); // Computer always plays Rock
+    return new Ninja(); // Computer always plays Ninja
 }
 
 std::string Computer::getName() const {
