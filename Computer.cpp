@@ -6,5 +6,5 @@ Move* Computer::makeMove() const {
 }
 
 std::string Computer::getName() const {
-    return "Ryomen Sukuna";
+    return "Computer";
 }

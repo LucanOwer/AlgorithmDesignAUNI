@@ -38,5 +38,5 @@ Move* Human::makeMove() const {
 }
 
 std::string Human::getName() const {
-    return "Gojo Satoru";
+    return "Human";
 }
