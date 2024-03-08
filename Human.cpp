@@ -11,6 +11,7 @@
 
 Move* Human::makeMove() const {
     std::string moveName;
+    std::cout << "Enter move: ";
     std::cin >> moveName;
 
 
