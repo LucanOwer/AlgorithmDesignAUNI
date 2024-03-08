@@ -9,11 +9,8 @@
 #include "Zombie.h"
 #include <iostream>
 
-Human::Human(const std::string& playerName) : name(playerName) {}
-
 Move* Human::makeMove() const {
     std::string moveName;
-    std::cout << "Enter your move (Rock, Paper, Scissors, Monkey, Ninja, Pirate, Zombie or Robot): ";
     std::cin >> moveName;
 
 
