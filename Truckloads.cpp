@@ -5,8 +5,8 @@ int Truckloads::numTrucks(int numCrates, int loadSize){
         int pileOne;
         int pileTwo;
         if (numCrates%2 != 0){
-            pileOne = (numCrates+1/2);
-            pileTwo = (numCrates-1/2);
+            pileOne = ((numCrates+1)/2);
+            pileTwo = ((numCrates-1)/2);
         }
         else {
             pileOne = numCrates/2;
