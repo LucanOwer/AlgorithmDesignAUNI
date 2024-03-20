@@ -12,6 +12,10 @@ class BagOfHolding{
     void addItem();
     void removeItem();
 
+
+// something to do with templates???? i dont know how those work.
+
+
 };
 
 #endif
