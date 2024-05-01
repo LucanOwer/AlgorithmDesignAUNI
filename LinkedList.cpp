@@ -35,33 +35,28 @@ void LinkedList::printList() {
 /////////// your code goes here... DO NOT change the function signatures ///////////
 
 bool LinkedList::swap(int pos1, int pos2) {
-	Node* currNode = head;
-	Node* pos1Node = head;
-	Node* pos2Node = head;
-	int data1 = 0;
-	int data2 = 0;
-	while (currNode != nullptr){
-		for (int i=0; i<pos1; i++){
-			currNode->link = pos1Node;
-			data1 = pos1Node->data;
-			currNode = currNode->link;
+	Node* position2 = head;
+	Node* position1 = head;
+	int data1;
+	int data2;
+	for (int i=0; i<pos1; i++){
+		position1 = position1->link;
+		if (position1 == nullptr){
+			return false;
 		}
-		for (int j=0; j<pos2;j++){
-			currNode->link = pos2Node;
-			data2 = pos2Node->data;
-			currNode = currNode->link;
-		}
-
-		if (pos1Node->data != data2){
-			pos1Node->data = data2;
-		}
-
-		if (pos2Node->data!=data1){
-			pos2Node->data = data2;
-		}	
-		return true;
+		data1 = position1->data;
 	}
-	return false;
+	for (int j=0; j<pos2; j++){
+		position2 = position2->link;
+		if (position2 == nullptr){
+			return false;
+		}
+		data2 = position2->data;
+	}
+
+	position2->data = data1;
+	position1->data = data2;
+	return true;
 }
 
 bool LinkedList::find_and_delete(int target) {
@@ -71,7 +66,7 @@ bool LinkedList::find_and_delete(int target) {
 			delete currNode;
 			return true;
 		}
-	currNode = currNode->link;
+		currNode = currNode->link;
 	}
 	return false;
 }
