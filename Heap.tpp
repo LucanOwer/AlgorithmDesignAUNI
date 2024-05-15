@@ -67,7 +67,6 @@ void Heap<T>::insert(T value) {
 
 template <typename T>
 void Heap<T>::remove(T value) {
-      // Find the index of the value to remove
     int index = -1;
     for (int i = 0; i < values.size(); ++i) {
         if (values[i] == value) {
