@@ -67,10 +67,24 @@ void Heap<T>::insert(T value) {
 
 template <typename T>
 void Heap<T>::remove(T value) {
+      // Find the index of the value to remove
+    int index = -1;
+    for (int i = 0; i < values.size(); ++i) {
+        if (values[i] == value) {
+            index = i;
+            break;
+        }
+    }
+
+    if (index != -1) {
+        values[index] = values.back();
+        values.pop_back();             
+
+        heapify(0);
+    }
 }
-/*******************************/
-// find the smallest value in the heap
-/*******************************/
+
+
 
 template <typename T>
 T Heap<T>::getMin() {
