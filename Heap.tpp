@@ -58,7 +58,7 @@ template <typename T>
 void Heap<T>::insert(T value) {
   values.push_back(value);
   int parent_index = (values.size() - 1) / 2;
-  heapify(parents_index);
+  heapify(parent_index);
 }
 
 /*******************************/
