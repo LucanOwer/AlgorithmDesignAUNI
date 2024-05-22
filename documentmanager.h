@@ -11,7 +11,8 @@ struct Document {
     int license_limit;
     int current_borrowed;
     
-    Document(const std::string& name, int id, int license_limit);
+    Document() : id(0), license_limit(0), current_borrowed(0) {}
+    Document(const std::string& name, int id, int license_limit) : name(name), id(id), license_limit(license_limit), current_borrowed(0) {};
 };
 
 class DocumentManager {
